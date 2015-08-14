@@ -10,7 +10,7 @@ int max(int a, int b){
 	return a>b?a:b;
 }
 
-void OneZeroPack(int cost, int weight){
+void ZeroOnePack(int cost, int weight){
 	for(int i = nValue; i >= cost; i--){
 		dp[i] = max(dp[i], dp[i-cost]+weight);
 	}
@@ -37,7 +37,7 @@ int main(){
 		memset(dp, 0, sizeof(dp));
 		nValue = m-5;
 		for(int i = 1; i < n; i++)
-			OneZeroPack(cost[i], cost[i]);
+			ZeroOnePack(cost[i], cost[i]);
 		cout << m - dp[nValue] - cost[0] << endl;
 		cin >> n;
 	}
