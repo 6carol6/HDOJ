@@ -1,3 +1,5 @@
+//HDOJ-1248 CompletePack
+
 #include <iostream>
 #include <memory.h>
 using namespace std;
