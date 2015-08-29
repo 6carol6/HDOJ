@@ -1,3 +1,4 @@
+//HDOJ-1176 SimpleDP
 #include <stdio.h>
 #include <memory.h>
 #include <algorithm>
