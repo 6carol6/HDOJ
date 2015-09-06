@@ -14,7 +14,7 @@ void CompletePack(int c, int w){
 
 int main(){
     while(cin >> nValue){
-            memset(ans, 0, sizeof(ans));
+        memset(ans, 0, sizeof(ans));
         ans[0] = 1;
         for(int i = 1; i <= 3; i++){
             CompletePack(i, i);
