@@ -6,7 +6,7 @@ const int MAXN = 32770;
 long long ans[MAXN];
 int nValue;
 
-CompletePack(int c, int w){
+void CompletePack(int c, int w){
     for(int i = c; i <= nValue; i++){
         ans[i] += ans[i-c];
     }
