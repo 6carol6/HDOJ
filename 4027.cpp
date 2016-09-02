@@ -74,6 +74,11 @@ void work(){
     for(int i = 0; i < m; i++){
         int T,x,y;
         scanf("%d%d%d", &T, &x, &y);
+        if(x>y){
+            int tmp = x;
+            x = y;
+            y = tmp;
+        }
         //cin >> T >> x >> y;
         if(T){
             printf("%lld\n", query(1, x, y));
